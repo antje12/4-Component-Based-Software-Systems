@@ -56,8 +56,13 @@ public class AsteroidSystem implements IEntityProcessingService {
     }
 
     private void updateShape(Entity entity) {
-        float[] shapex = entity.getShapeX();
-        float[] shapey = entity.getShapeY();
+        
+        int numPoints = 6;
+        float angle = 0;
+        
+        float[] shapex = new float[6];
+        float[] shapey = new float[6];
+        
         PositionPart positionPart = entity.getPart(PositionPart.class);
         float x = positionPart.getX();
         float y = positionPart.getY();
@@ -66,18 +71,12 @@ public class AsteroidSystem implements IEntityProcessingService {
         LifePart lifePart = entity.getPart(LifePart.class);
         int size = lifePart.getLife();
         
-        shapex[0] = (float) (x + Math.cos(radians) * 8 * size);
-        shapey[0] = (float) (y + Math.sin(radians) * 8 * size);
-
-        shapex[1] = (float) (x + Math.cos(radians + 3.1415f / 2) * 8 * size);
-        shapey[1] = (float) (y + Math.sin(radians + 3.1415f / 2) * 8 * size);
-
-        shapex[2] = (float) (x + Math.cos(radians + 3.1415f) * 8 * size);
-        shapey[2] = (float) (y + Math.sin(radians + 3.1415f) * 8 * size);
-
-        shapex[3] = (float) (x + Math.cos(radians - 3.1415f / 2) * 8 * size);
-        shapey[3] = (float) (y + Math.sin(radians - 3.1415f / 2) * 8 * size);
-
+        for (int i = 0; i < numPoints; i++) {
+            shapex[i] = x + (float) Math.cos(angle + radians) * 8 * size;
+            shapey[i] = y + (float) Math.sin(angle + radians) * 8 * size;
+            angle += 2 * 3.1415f / numPoints;
+        }
+        
         entity.setShapeX(shapex);
         entity.setShapeY(shapey);
     }
