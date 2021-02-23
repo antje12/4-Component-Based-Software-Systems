@@ -9,10 +9,6 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.ShootingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.SplitPart;
 import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
 
-/**
- *
- * @author jcs
- */
 public class CollisionSystem implements IPostEntityProcessingService {
 
     @Override

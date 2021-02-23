@@ -16,14 +16,10 @@ public class LifePart implements EntityPart {
 
     private int life;
     private boolean isHit = false;
-    private float expiration;
 
-    public LifePart(int life, float expiration) {
+    public LifePart(int life) {
         this.life = life;
-        this.expiration = expiration;
     }
-    
-    
 
     public int getLife() {
         return life;
@@ -33,28 +29,25 @@ public class LifePart implements EntityPart {
         this.life = life;
     }
 
-    public boolean isIsHit() {
+    public boolean isHit() {
         return isHit;
     }
 
     public void setIsHit(boolean isHit) {
         this.isHit = isHit;
     }
-
-    public float getExpiration() {
-        return expiration;
-    }
-
-    public void setExpiration(float expiration) {
-        this.expiration = expiration;
-    }  
-    
-    public void reduceExpiration(float delta){
-        this.expiration -= delta;
-    }
     
     @Override
     public void process(GameData gameData, Entity entity) {
-        
+        if (isHit) {
+            life = life - 1;
+            isHit = false;
+            
+            SplitterPart split = entity.getPart(SplitterPart.class);
+            if (split != null) {
+                boolean shouldSplit = life > 0;
+                split.setShouldSplit(shouldSplit);
+            }
+        }
     }
 }

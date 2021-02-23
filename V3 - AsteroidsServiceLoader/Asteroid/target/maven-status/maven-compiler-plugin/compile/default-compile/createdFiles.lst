@@ -1,5 +1,4 @@
-dk\sdu\mmmi\cbse\asteroid\Asteroid.class
-dk\sdu\mmmi\cbse\asteroid\AsteroidPlugin.class
-dk\sdu\mmmi\cbse\asteroid\AsteroidType.class
-dk\sdu\mmmi\cbse\asteroid\AsteroidSplitter.class
-dk\sdu\mmmi\cbse\asteroid\AsteroidControlSystem.class
+dk\sdu\mmmi\cbse\asteroidsystem\Asteroid.class
+dk\sdu\mmmi\cbse\asteroidsystem\AsteroidSystem.class
+dk\sdu\mmmi\cbse\asteroidsystem\AsteroidSplitter.class
+dk\sdu\mmmi\cbse\asteroidsystem\AsteroidPlugin.class

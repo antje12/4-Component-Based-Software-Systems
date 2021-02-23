@@ -60,5 +60,4 @@ public class AsteroidPlugin implements IGamePluginService {
             world.removeEntity(bullet);
         }
     }
-
 }

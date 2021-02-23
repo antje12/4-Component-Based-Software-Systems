@@ -1,30 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package dk.sdu.mmmi.cbse.asteroid;
+package dk.sdu.mmmi.cbse.asteroidsystem;
 
-import static dk.sdu.mmmi.cbse.asteroid.AsteroidType.MEDIUM;
-import static dk.sdu.mmmi.cbse.asteroid.AsteroidType.SMALL;
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.GameData;
 import dk.sdu.mmmi.cbse.common.data.World;
+import dk.sdu.mmmi.cbse.common.data.entityparts.SplitterPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
-import dk.sdu.mmmi.cbse.common.data.entityparts.SplitterPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 import java.util.Random;
-//import org.openide.util.lookup.ServiceProvider;
 
-/**
- *
- * @author Phillip O
- */
-//@ServiceProvider(service = IEntityProcessingService.class)
-public class AsteroidSplitter implements IEntityProcessingService {
-
+public class AsteroidSplitter /*implements IEntityProcessingService*/ {
+/*
     Random rnd = new Random();
 
     @Override
@@ -34,7 +21,7 @@ public class AsteroidSplitter implements IEntityProcessingService {
             PositionPart posPart = asteroid.getPart(PositionPart.class);
             SplitterPart splitter = asteroid.getPart(SplitterPart.class);
 
-            if (theAsteroid.getSize().equals("LARGE") && splitter.ShouldSplit()) {
+            if (theAsteroid.getSize().equals("LARGE") && splitter.getShouldSplit()) {
                 splitter.setShouldSplit(false);
                 Asteroid mediumAsteroidOne = createMediumAsteroid(posPart.getX(), posPart.getY());
                 Asteroid mediumAsteroidTwo = createMediumAsteroid(posPart.getX(), posPart.getY());
@@ -42,7 +29,7 @@ public class AsteroidSplitter implements IEntityProcessingService {
                 world.addEntity(mediumAsteroidTwo);
             }
 
-            if (theAsteroid.getSize().equals("MEDIUM") && splitter.ShouldSplit()) {
+            if (theAsteroid.getSize().equals("MEDIUM") && splitter.getShouldSplit()) {
                 splitter.setShouldSplit(false);
                 Asteroid smallAsteroidOne = createSmallAsteroid(posPart.getX(), posPart.getY());
                 Asteroid smallAsteroidTwo = createSmallAsteroid(posPart.getX(), posPart.getY());
@@ -81,5 +68,5 @@ public class AsteroidSplitter implements IEntityProcessingService {
         asteroid.setRadius(10);
 
         return (Asteroid) asteroid;
-    }
+    }*/
 }

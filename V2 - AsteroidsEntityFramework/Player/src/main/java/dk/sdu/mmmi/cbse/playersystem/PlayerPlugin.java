@@ -14,6 +14,7 @@ public class PlayerPlugin implements IGamePluginService {
     private Entity player;
 
     public PlayerPlugin() {
+
     }
 
     @Override

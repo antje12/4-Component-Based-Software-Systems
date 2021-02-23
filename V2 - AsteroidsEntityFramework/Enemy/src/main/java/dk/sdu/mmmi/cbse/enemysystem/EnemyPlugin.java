@@ -14,6 +14,7 @@ public class EnemyPlugin implements IGamePluginService {
     private Entity enemy;
 
     public EnemyPlugin() {
+
     }
 
     @Override
@@ -49,5 +50,4 @@ public class EnemyPlugin implements IGamePluginService {
         // Remove entities
         world.removeEntity(enemy);
     }
-
 }

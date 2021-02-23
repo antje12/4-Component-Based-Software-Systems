@@ -9,10 +9,6 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 
-/**
- *
- * @author jcs
- */
 public class AsteroidSystem implements IEntityProcessingService {
 
     @Override

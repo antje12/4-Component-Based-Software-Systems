@@ -13,15 +13,14 @@ import dk.sdu.mmmi.cbse.common.data.GameData;
  * @author Phillip O
  */
 public class SplitterPart implements EntityPart {
-    
-    boolean shouldSplit = false;
 
-    @Override
-    public void process(GameData gameData, Entity entity) {
+    private boolean shouldSplit = false;
+    
+    public SplitterPart() {
         
     }
-
-    public boolean ShouldSplit() {
+    
+    public boolean getShouldSplit() {
         return shouldSplit;
     }
 
@@ -29,5 +28,8 @@ public class SplitterPart implements EntityPart {
         this.shouldSplit = shouldSplit;
     }
     
-    
+    @Override
+    public void process(GameData gameData, Entity entity) {
+        
+    }
 }

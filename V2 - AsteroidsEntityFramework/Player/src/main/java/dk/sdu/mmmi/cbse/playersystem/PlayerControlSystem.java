@@ -13,10 +13,6 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.ShootingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 
-/**
- *
- * @author jcs
- */
 public class PlayerControlSystem implements IEntityProcessingService {
 
     @Override
@@ -71,5 +67,4 @@ public class PlayerControlSystem implements IEntityProcessingService {
         entity.setShapeX(shapex);
         entity.setShapeY(shapey);
     }
-
 }

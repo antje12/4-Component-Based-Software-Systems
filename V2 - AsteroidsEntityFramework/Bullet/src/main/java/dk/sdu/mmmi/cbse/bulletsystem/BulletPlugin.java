@@ -8,6 +8,7 @@ import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
 public class BulletPlugin implements IGamePluginService {
 
     public BulletPlugin() {
+
     }
 
     @Override
@@ -22,5 +23,4 @@ public class BulletPlugin implements IGamePluginService {
             world.removeEntity(bullet);
         }
     }
-
 }

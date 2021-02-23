@@ -10,10 +10,6 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.ShootingPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 import java.util.Random;
 
-/**
- *
- * @author jcs
- */
 public class EnemyControlSystem implements IEntityProcessingService {
 
     @Override
@@ -75,5 +71,4 @@ public class EnemyControlSystem implements IEntityProcessingService {
         entity.setShapeX(shapex);
         entity.setShapeY(shapey);
     }
-
 }

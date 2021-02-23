@@ -10,10 +10,6 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.ShootingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.TimerPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 
-/**
- *
- * @author jcs
- */
 public class BulletControlSystem implements IEntityProcessingService {
 
     private Entity bullet;
@@ -92,5 +88,4 @@ public class BulletControlSystem implements IEntityProcessingService {
         entity.setShapeX(shapex);
         entity.setShapeY(shapey);
     }
-
 }
