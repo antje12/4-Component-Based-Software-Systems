@@ -6,19 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Bullet" />
         <module name="common" />
         <module name="Asteroid" />
+        <module name="Collision" />
+        <module name="Enemy" />
         <module name="Core" />
         <module name="player" />
-        <module name="Collision" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Asteroid" target="1.8" />
       <module name="asteroids.serviceloader" target="1.8" />
+      <module name="Bullet" target="1.8" />
       <module name="Collision" target="1.8" />
       <module name="common" target="1.8" />
       <module name="Core" target="1.8" />
+      <module name="Enemy" target="1.8" />
       <module name="player" target="1.8" />
     </bytecodeTargetLevel>
   </component>
