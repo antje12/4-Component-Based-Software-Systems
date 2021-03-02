@@ -16,8 +16,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import org.openide.util.Lookup;
-import org.openide.util.LookupEvent;
-import org.openide.util.LookupListener;
 
 public class Game implements ApplicationListener {
 
