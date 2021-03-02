@@ -15,6 +15,7 @@ import dk.sdu.mmmi.cbse.core.managers.GameInputProcessor;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
 import org.openide.util.Lookup;
 
 public class Game implements ApplicationListener {
@@ -51,17 +52,12 @@ public class Game implements ApplicationListener {
 
     @Override
     public void render() {
-
         // clear screen to black
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
         gameData.setDelta(Gdx.graphics.getDeltaTime());
-
         update();
-
         draw();
-
         gameData.getKeys().update();
     }
 
@@ -79,16 +75,12 @@ public class Game implements ApplicationListener {
         for (Entity entity : world.getEntities()) {
 
             sr.setColor(1, 1, 1, 1);
-
             sr.begin(ShapeRenderer.ShapeType.Line);
 
             float[] shapex = entity.getShapeX();
             float[] shapey = entity.getShapeY();
 
-            for (int i = 0, j = shapex.length - 1;
-                    i < shapex.length;
-                    j = i++) {
-
+            for (int i = 0, j = shapex.length - 1; i < shapex.length; j = i++) {
                 sr.line(shapex[i], shapey[i], shapex[j], shapey[j]);
             }
 
