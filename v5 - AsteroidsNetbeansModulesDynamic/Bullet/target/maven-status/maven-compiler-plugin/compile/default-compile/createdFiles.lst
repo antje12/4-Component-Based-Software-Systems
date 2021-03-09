@@ -1,5 +1,0 @@
-META-INF\services\dk.sdu.mmmi.cbse.common.services.IGamePluginService
-META-INF\services\dk.sdu.mmmi.cbse.common.services.IEntityProcessingService
-dk\sdu\mmmi\cbse\bullet\Bullet.class
-dk\sdu\mmmi\cbse\bullet\BulletPlugin.class
-dk\sdu\mmmi\cbse\bullet\BulletSystem.class
