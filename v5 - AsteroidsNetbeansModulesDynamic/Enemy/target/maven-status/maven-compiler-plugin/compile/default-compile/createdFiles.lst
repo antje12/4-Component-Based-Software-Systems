@@ -1,0 +1,5 @@
+dk\sdu\mmmi\cbse\enemy\EnemyControlSystem.class
+META-INF\services\dk.sdu.mmmi.cbse.common.services.IGamePluginService
+dk\sdu\mmmi\cbse\enemy\Enemy.class
+META-INF\services\dk.sdu.mmmi.cbse.common.services.IEntityProcessingService
+dk\sdu\mmmi\cbse\enemy\EnemyPlugin.class
