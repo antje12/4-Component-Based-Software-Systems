@@ -44,7 +44,7 @@ public class Game implements ApplicationListener {
 
         Gdx.input.setInputProcessor(new GameInputProcessor(gameData));
 
-        // Lookup all Game Plugins using ServiceLoader
+        // Lookup all Game Plugins using Lookup
         for (IGamePluginService iGamePlugin : getPluginServices()) {
             iGamePlugin.start(gameData, world);
         }
