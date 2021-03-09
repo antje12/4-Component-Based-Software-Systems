@@ -73,7 +73,6 @@ public class Collider implements IPostEntityProcessingService {
         // if radius overlap
         if (distance < entity1.getRadius() + entity2.getRadius()) {
             // Collision!
-            System.out.println("Collision!");
             return true;
         }
 

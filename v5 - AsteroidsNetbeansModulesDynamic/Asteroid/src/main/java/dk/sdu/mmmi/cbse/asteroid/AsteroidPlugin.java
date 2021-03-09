@@ -16,8 +16,6 @@ import org.openide.util.lookup.ServiceProviders;
     @ServiceProvider(service = IGamePluginService.class),})
 public class AsteroidPlugin implements IGamePluginService
 {
-  private Entity asteroid;
-
     @Override
     public void start(GameData gameData, World world) {
        Entity asteroid = createAsteroid(gameData, 3);
@@ -56,6 +54,8 @@ public class AsteroidPlugin implements IGamePluginService
     
     @Override
     public void stop(GameData gameData, World world) {
-        world.removeEntity(asteroid);
+        for (Entity bullet : world.getEntities(Asteroid.class)) {
+            world.removeEntity(bullet);
+        }
     }
 }

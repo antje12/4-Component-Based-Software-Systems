@@ -8,10 +8,10 @@
         <version>1.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>AsteroidsNetbeansModules-app</artifactId>
+    <artifactId>AsteroidsNetbeansModulesDynamic-app</artifactId>
     <packaging>nbm-application</packaging>
 
-    <name>AsteroidsNetbeansModules-app</name>
+    <name>AsteroidsNetbeansModulesDynamic-app</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

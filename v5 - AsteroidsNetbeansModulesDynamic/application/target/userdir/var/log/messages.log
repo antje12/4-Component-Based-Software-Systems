@@ -1,0 +1,308 @@
+-------------------------------------------------------------------------------
+>Log Session: Tuesday, March 9, 2021 at 6:05:19 PM Central European Standard Time
+>System Info: 
+  Product Version         = AsteroidsNetbeansModules incubator-netbeans-release-334-on-20180708
+  Operating System        = Windows 10 version 10.0 running on amd64
+  Java; VM; Vendor        = 13.0.2; Java HotSpot(TM) 64-Bit Server VM 13.0.2+8; Oracle Corporation
+  Runtime                 = Java(TM) SE Runtime Environment 13.0.2+8
+  Java Home               = C:\Program Files\Java\jdk-13.0.2
+  System Locale; Encoding = en_US (asteroidsnetbeansmodules); Cp1252
+  Home Directory          = C:\Users\Bruger
+  Current Directory       = D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules
+  User Directory          = D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir
+  Cache Directory         = D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\var\cache
+  Installation            = D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules
+                            D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\bin
+                            D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\etc
+                            D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform
+                            D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform
+  Boot & Ext. Classpath   = 
+  Application Classpath   = D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\lib\boot.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\lib\org-openide-modules.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\lib\org-openide-util-lookup.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\lib\org-openide-util-ui.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\lib\org-openide-util.jar
+  Startup Classpath       = D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\core\asm-all-5.0.1.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\core\core-base.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\core\core.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\core\org-netbeans-libs-asm.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\platform\core\org-openide-filesystems.jar;D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\core\locale\core_asteroidsnetbeansmodules.jar
+-------------------------------------------------------------------------------
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	org.openide.util.lookup [8.35.1 incubator-netbeans-release-334-on-20180708]
+	org.openide.util [9.9.1 incubator-netbeans-release-334-on-20180708]
+	org.openide.util.ui [9.9.1 incubator-netbeans-release-334-on-20180708]
+	org.openide.modules [7.50.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.api.annotations.common/1 [1.29.1 incubator-netbeans-release-334-on-20180708]
+	org.openide.filesystems [9.12.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.api.intent [1.4.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.api.io [1.5.1 incubator-netbeans-release-334-on-20180708]
+	org.openide.io [1.51.1 incubator-netbeans-release-334-on-20180708]
+	org.openide.awt [7.69.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.api.progress/1 [1.49.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.libs.asm [5.5.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.bootstrap/1 [2.78.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.core.startup.base [1.64.1.1 1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.core.startup/1 [1.64.1.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.api.progress.nb [1.49.1 incubator-netbeans-release-334-on-20180708]
+	org.netbeans.modules.autoupdate.services [1.54.1 incubator-netbeans-release-334-on-20180708]
+	dk.sdu.mmmi.cbse.SilentUpdate [1.0.1 1.0.1-20210309 202103091702]
+	dk.sdu.mmmi.cbse.AsteroidsNetbeansModules.branding [1.0.1 1.0.1-20210309 202103091601]
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Enemy[dk.sdu.mmmi.cbse.Enemy/1.0.1]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Bullet[dk.sdu.mmmi.cbse.Bullet/1.0.1]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Core[dk.sdu.mmmi.cbse.Core/1.0.1]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Asteroid[dk.sdu.mmmi.cbse.Asteroid/1.0.1]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Common[dk.sdu.mmmi.cbse.Common/1.0.1]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Player[dk.sdu.mmmi.cbse.Player/1.0.1]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Collision[dk.sdu.mmmi.cbse.Collision/1.0.1]
+INFO [org.netbeans.modules.autoupdate.services.InstallManager]: D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir will be used as target cluster
+INFO [null]: Last record repeated 3 more times.
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Enemy.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Enemy.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Enemy.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Enemy.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Enemy.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Enemy.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Enemy.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Enemy.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Enemy.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Enemy.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@4553d4b1
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Enemy.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Enemy.xml@0
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Player.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Player.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Player.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Player.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Player.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Player.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Player.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Player.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Player.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Player.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@2e8b5ec4
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Player.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Player.xml@0
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Asteroid.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Asteroid.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Asteroid.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Asteroid.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Asteroid.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Asteroid.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Asteroid.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@6f6a5f88
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Asteroid.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Asteroid.xml@0
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Collision.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Collision.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Collision.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Collision.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Collision.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Collision.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Collision.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Collision.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Collision.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Collision.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@1b18f0e7
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Collision.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Collision.xml@0
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Bullet.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Bullet.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Bullet.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Bullet.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Bullet.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Bullet.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Bullet.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Bullet.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Bullet.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Bullet.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@3b748fdb
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Bullet.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Bullet.xml@0
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Common.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\config\Modules\dk-sdu-mmmi-cbse-Common.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Common.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Common.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\config\Modules\dk-sdu-mmmi-cbse-Common.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\dk-sdu-mmmi-cbse-Common.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Common.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Common.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\dk-sdu-mmmi-cbse-Common.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Common.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@6aee8f39
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update_tracking\dk-sdu-mmmi-cbse-Common.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update_tracking\dk-sdu-mmmi-cbse-Common.xml@0
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Core.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\config\Modules\dk-sdu-mmmi-cbse-Core.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Core.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\config\Modules\dk-sdu-mmmi-cbse-Core.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\dk-sdu-mmmi-cbse-Core.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Core.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\dk-sdu-mmmi-cbse-Core.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-backend-lwjgl.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx-backend-lwjgl.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-backend-lwjgl.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-box2d-platform-natives-desktop.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx-box2d-platform-natives-desktop.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-box2d-platform-natives-desktop.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-box2d.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx-box2d.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-box2d.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-freetype-platform-natives-desktop.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx-freetype-platform-natives-desktop.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-freetype-platform-natives-desktop.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-freetype.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx-freetype.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-freetype.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-platform-natives-desktop.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx-platform-natives-desktop.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx-platform-natives-desktop.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-gdx/gdx.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-gdx\gdx.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-jlayer\jlayer.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/com-badlogicgames-jlayer/jlayer.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\com-badlogicgames-jlayer\jlayer.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\net-java-jinput\jinput.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/net-java-jinput/jinput.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\net-java-jinput\jinput.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\net-java-jutils\jutils.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/net-java-jutils/jutils.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\net-java-jutils\jutils.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-jcraft\jorbis.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/org-jcraft/jorbis.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-jcraft\jorbis.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl-platform-natives-linux.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/org-lwjgl-lwjgl/lwjgl-platform-natives-linux.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl-platform-natives-linux.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl-platform-natives-osx.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/org-lwjgl-lwjgl/lwjgl-platform-natives-osx.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl-platform-natives-osx.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl-platform-natives-windows.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/org-lwjgl-lwjgl/lwjgl-platform-natives-windows.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl-platform-natives-windows.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/org-lwjgl-lwjgl/lwjgl.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl.jar
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl_util.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm:netbeans/modules/ext/dk.sdu.mmmi.cbse.Core/org-lwjgl-lwjgl/lwjgl_util.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\modules\ext\dk.sdu.mmmi.cbse.Core\org-lwjgl-lwjgl\lwjgl_util.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\dk-sdu-mmmi-cbse-Core.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@4b5e68d2
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update_tracking\dk-sdu-mmmi-cbse-Core.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update_tracking\dk-sdu-mmmi-cbse-Core.xml@0
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\userdir\update\download\additional_information.xml deleted.
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\additional_information.xml deleted.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Install new modules done.
+Turning on modules...
+Loading module services...
+Loading modules...
+Starting modules...
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	dk.sdu.mmmi.cbse.Common [1.0.1 1.0.1-20210309 202103091346]
+	dk.sdu.mmmi.cbse.Player [1.0.1 1.0.1-20210309 202103091346]
+	dk.sdu.mmmi.cbse.Enemy [1.0.1 1.0.1-20210309 202103091346]
+	dk.sdu.mmmi.cbse.Core [1.0.1 1.0.1-20210309 202103091346]
+	dk.sdu.mmmi.cbse.Collision [1.0.1 1.0.1-20210309 202103091346]
+	dk.sdu.mmmi.cbse.Bullet [1.0.1 1.0.1-20210309 202103091346]
+	dk.sdu.mmmi.cbse.Asteroid [1.0.1 1.0.1-20210309 202103091702]
+Turning on modules...done.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: None for update/install/uninstall
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: None for update/install/uninstall
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Uninstall found: Asteroid[dk.sdu.mmmi.cbse.Asteroid/1.0.1]
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.core.startup.NbEvents]: Turning off modules:
+	dk.sdu.mmmi.cbse.Asteroid [1.0.1 1.0.1-20210309 202103091702]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Unstall modules done.
+Turning off modules...
+Turning off modules...done.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: None for update/install/uninstall
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: None for update/install/uninstall
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: None for update/install/uninstall
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Asteroid[dk.sdu.mmmi.cbse.Asteroid/1.0.1]
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Asteroid.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Asteroid.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Asteroid.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Asteroid.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Asteroid.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Asteroid.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Asteroid.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@3177191e
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Asteroid.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Asteroid.xml@0
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\additional_information.xml deleted.
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	dk.sdu.mmmi.cbse.Asteroid [1.0.1 1.0.1-20210309 202103091702]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Install new modules done.
+Turning on modules...
+Loading module services...
+Loading modules...
+Turning on modules...done.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: None for update/install/uninstall
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Uninstall found: Asteroid[dk.sdu.mmmi.cbse.Asteroid/1.0.1]
+INFO [org.netbeans.core.startup.NbEvents]: Turning off modules:
+	dk.sdu.mmmi.cbse.Asteroid [1.0.1 1.0.1-20210309 202103091702]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Unstall modules done.
+Turning off modules...
+Turning off modules...done.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license B2B74E56 without any module.
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 22A3DEEE without any module.
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Update found: Asteroid[dk.sdu.mmmi.cbse.Asteroid/1.0.1]
+INFO [org.netbeans.updater]: 780: Unpacking dk-sdu-mmmi-cbse-Asteroid.nbm
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Asteroid.xml@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm:netbeans/config/Modules/dk-sdu-mmmi-cbse-Asteroid.xml to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\config\Modules\dk-sdu-mmmi-cbse-Asteroid.xml
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Asteroid.jar@0
+INFO [org.netbeans.updater]: Copied file D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm:netbeans/modules/dk-sdu-mmmi-cbse-Asteroid.jar to D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\modules\dk-sdu-mmmi-cbse-Asteroid.jar
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\dk-sdu-mmmi-cbse-Asteroid.nbm deleted.
+INFO [org.netbeans.updater]: Use XML Transformer: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@17489c94
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Asteroid.xml modified.
+INFO [org.netbeans.updater]: File installed D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update_tracking\dk-sdu-mmmi-cbse-Asteroid.xml@0
+INFO [org.netbeans.updater]: File D:\Git\Asteroids\v5 - AsteroidsNetbeansModulesDynamic\application\target\asteroidsnetbeansmodules\asteroidsnetbeansmodules\update\download\additional_information.xml deleted.
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	dk.sdu.mmmi.cbse.Asteroid [1.0.1 1.0.1-20210309 202103091702]
+INFO [org.netbeans.modules.autoupdate.silentupdate]: Install new modules done.
+Turning on modules...
+Loading module services...
+Loading modules...
+Turning on modules...done.

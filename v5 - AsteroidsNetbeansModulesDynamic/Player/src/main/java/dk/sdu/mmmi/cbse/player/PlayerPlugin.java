@@ -16,8 +16,6 @@ import org.openide.util.lookup.ServiceProviders;
     @ServiceProvider(service = IGamePluginService.class),})
 public class PlayerPlugin implements IGamePluginService {
 
-    private Entity player;
-
     public PlayerPlugin() {
     }
 
@@ -25,7 +23,7 @@ public class PlayerPlugin implements IGamePluginService {
     public void start(GameData gameData, World world) {
         
         // Add entities to the world
-        player = createPlayerShip(gameData);
+        Entity player = createPlayerShip(gameData);
         world.addEntity(player);
     }
 
@@ -52,6 +50,8 @@ public class PlayerPlugin implements IGamePluginService {
     @Override
     public void stop(GameData gameData, World world) {
         // Remove entities
-        world.removeEntity(player);
+        for (Entity bullet : world.getEntities(Player.class)) {
+            world.removeEntity(bullet);
+        }
     }
 }

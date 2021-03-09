@@ -1,8 +1,5 @@
 package org.netbeans.modules.autoupdate.silentupdate;
 
-/**
- *
- */
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -28,12 +25,10 @@ public class UpdateActivator extends ModuleInstall {
                 UpdateHandler.checkAndHandleUpdates();
             }
         }
-
     };
 
     @Override
     public void uninstalled() {
         super.uninstalled(); //To change body of generated methods, choose Tools | Templates.
     }
-
 }

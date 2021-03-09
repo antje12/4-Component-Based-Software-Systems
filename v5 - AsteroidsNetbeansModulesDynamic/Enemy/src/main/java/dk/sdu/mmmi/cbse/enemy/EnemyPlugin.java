@@ -15,8 +15,6 @@ import org.openide.util.lookup.ServiceProviders;
     @ServiceProvider(service = IGamePluginService.class),})
 public class EnemyPlugin implements IGamePluginService {
 
-    private Entity enemy;
-
     public EnemyPlugin() {
     }
 
@@ -24,7 +22,7 @@ public class EnemyPlugin implements IGamePluginService {
     public void start(GameData gameData, World world) {
         
         // Add entities to the world
-        enemy = createEnemyShip(gameData);
+        Entity enemy = createEnemyShip(gameData);
         world.addEntity(enemy);
     }
 
@@ -51,6 +49,8 @@ public class EnemyPlugin implements IGamePluginService {
     @Override
     public void stop(GameData gameData, World world) {
         // Remove entities
-        world.removeEntity(enemy);
+        for (Entity bullet : world.getEntities(Enemy.class)) {
+            world.removeEntity(bullet);
+        }
     }
 }
