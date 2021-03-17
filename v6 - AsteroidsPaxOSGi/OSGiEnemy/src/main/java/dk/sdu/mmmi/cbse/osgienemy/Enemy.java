@@ -1,4 +1,4 @@
-package dk.sdu.mmmi.cbse.common.enemy;
+package dk.sdu.mmmi.cbse.osgienemy;
 
 import dk.sdu.mmmi.cbse.common.data.Entity;
 
