@@ -6,6 +6,7 @@ import dk.sdu.mmmi.cbse.common.data.GameData;
 import dk.sdu.mmmi.cbse.common.data.GameKeys;
 
 public class GameInputProcessor extends InputAdapter {
+    
     private final GameData gameData;
 
     public GameInputProcessor(GameData gameData) {
@@ -68,11 +69,3 @@ public class GameInputProcessor extends InputAdapter {
         return true;
     }
 }
-
-
-
-
-
-
-
-
