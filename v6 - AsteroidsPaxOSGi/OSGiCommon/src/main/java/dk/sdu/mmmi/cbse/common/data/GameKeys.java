@@ -18,7 +18,6 @@ public class GameKeys {
     public GameKeys() {
         keys = new boolean[NUM_KEYS];
         pkeys = new boolean[NUM_KEYS];
-
     }
 
     public void update() {
@@ -38,5 +37,4 @@ public class GameKeys {
     public boolean isPressed(int k) {
         return keys[k] && !pkeys[k];
     }
-
 }

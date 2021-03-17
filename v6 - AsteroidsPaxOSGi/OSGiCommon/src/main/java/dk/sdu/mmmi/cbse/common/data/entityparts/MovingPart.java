@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dk.sdu.mmmi.cbse.common.data.entityparts;
 
 import dk.sdu.mmmi.cbse.common.data.Entity;
@@ -11,11 +6,8 @@ import static java.lang.Math.cos;
 import static java.lang.Math.sin;
 import static java.lang.Math.sqrt;
 
-/**
- *
- * @author Alexander
- */
-public class MovingPart implements EntityPart {
+public class MovingPart
+        implements EntityPart {
 
     private float dx, dy;
     private float deceleration, acceleration;
@@ -29,14 +21,6 @@ public class MovingPart implements EntityPart {
         this.rotationSpeed = rotationSpeed;
     }
 
-    public float getDx() {
-        return dx;
-    }
-
-    public float getDy() {
-        return dy;
-    }
-    
     public void setDeceleration(float deceleration) {
         this.deceleration = deceleration;
     }
@@ -47,11 +31,6 @@ public class MovingPart implements EntityPart {
 
     public void setMaxSpeed(float maxSpeed) {
         this.maxSpeed = maxSpeed;
-    }
-    
-    public void setSpeed(float speed) {
-        this.acceleration = speed;
-        this.maxSpeed = speed;
     }
 
     public void setRotationSpeed(float rotationSpeed) {
@@ -77,7 +56,7 @@ public class MovingPart implements EntityPart {
         float y = positionPart.getY();
         float radians = positionPart.getRadians();
         float dt = gameData.getDelta();
-
+        
         // turning
         if (left) {
             radians += rotationSpeed * dt;
@@ -123,8 +102,6 @@ public class MovingPart implements EntityPart {
 
         positionPart.setX(x);
         positionPart.setY(y);
-
         positionPart.setRadians(radians);
     }
-
 }
