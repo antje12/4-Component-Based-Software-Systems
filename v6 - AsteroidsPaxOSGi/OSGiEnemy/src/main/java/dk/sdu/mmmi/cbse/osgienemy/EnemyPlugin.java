@@ -12,6 +12,7 @@ import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
 public class EnemyPlugin implements IGamePluginService {
 
     public EnemyPlugin() {
+        
     }
 
     @Override

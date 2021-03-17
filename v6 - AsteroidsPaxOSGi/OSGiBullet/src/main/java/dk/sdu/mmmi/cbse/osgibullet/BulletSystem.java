@@ -11,8 +11,6 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.TimerPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 
 public class BulletSystem implements IEntityProcessingService {
-
-    private Entity bullet;
     
     @Override
     public void process(GameData gameData, World world) {
@@ -21,7 +19,7 @@ public class BulletSystem implements IEntityProcessingService {
             ShootingPart shootingPart = entity.getPart(ShootingPart.class);
             if (shootingPart != null && shootingPart.isShooting()) {
                 PositionPart positionPart = entity.getPart(PositionPart.class);
-                bullet = createBullet(positionPart.getX(), positionPart.getY(), positionPart.getRadians(), shootingPart.getId());
+                Entity bullet = createBullet(positionPart.getX(), positionPart.getY(), positionPart.getRadians(), shootingPart.getId());
                 shootingPart.setShooting(false);
                 world.addEntity(bullet);
             }
