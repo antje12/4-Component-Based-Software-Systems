@@ -15,10 +15,13 @@ import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
 import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
 import dk.sdu.mmmi.cbse.core.managers.GameInputProcessor;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.CopyOnWriteArrayList; 
 
 public class Game implements ApplicationListener {
 
+    private static int Width = 800;
+    private static int Height = 600;
+    
     private static OrthographicCamera cam;
     private ShapeRenderer sr;
     private final GameData gameData = new GameData();
@@ -29,13 +32,15 @@ public class Game implements ApplicationListener {
 
     public Game(){
         init();
+        gameData.setDisplayWidth(Width);
+        gameData.setDisplayHeight(Height);
     }
 
     public void init() {
         LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
         cfg.title = "Asteroids";
-        cfg.width = 800;
-        cfg.height = 600;
+        cfg.width = Width;
+        cfg.height = Height;
         cfg.useGL30 = false;
         cfg.resizable = false;
 
@@ -44,9 +49,6 @@ public class Game implements ApplicationListener {
 
     @Override
     public void create() {
-        gameData.setDisplayWidth(Gdx.graphics.getWidth());
-        gameData.setDisplayHeight(Gdx.graphics.getHeight());
-
         cam = new OrthographicCamera(gameData.getDisplayWidth(), gameData.getDisplayHeight());
         cam.translate(gameData.getDisplayWidth() / 2, gameData.getDisplayHeight() / 2);
         cam.update();
@@ -61,12 +63,10 @@ public class Game implements ApplicationListener {
         // clear screen to black
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
         gameData.setDelta(Gdx.graphics.getDeltaTime());
-        gameData.getKeys().update();
-
         update();
         draw();
+        gameData.getKeys().update();
     }
 
     private void update() {
@@ -126,11 +126,11 @@ public class Game implements ApplicationListener {
     }
 
     public void addPostEntityProcessingService(IPostEntityProcessingService eps) {
-        postEntityProcessorList.add(eps);
+        this.postEntityProcessorList.add(eps);
     }
 
     public void removePostEntityProcessingService(IPostEntityProcessingService eps) {
-        postEntityProcessorList.remove(eps);
+        this.postEntityProcessorList.remove(eps);
     }
 
     public void addGamePluginService(IGamePluginService plugin) {

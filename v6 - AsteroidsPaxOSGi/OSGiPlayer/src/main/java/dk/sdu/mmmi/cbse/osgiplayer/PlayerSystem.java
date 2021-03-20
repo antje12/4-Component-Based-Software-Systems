@@ -29,7 +29,7 @@ public class PlayerSystem implements IEntityProcessingService {
             movingPart.setRight(gameData.getKeys().isDown(RIGHT));
             movingPart.setUp(gameData.getKeys().isDown(UP));
             
-            shootingPart.setShooting(gameData.getKeys().isDown(SPACE));
+            shootingPart.setShooting(gameData.getKeys().isPressed(SPACE));
             
             movingPart.process(gameData, player);
             positionPart.process(gameData, player);
