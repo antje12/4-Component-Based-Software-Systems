@@ -34,6 +34,13 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-Activator>dk.sdu.mmmi.cbse.osgienemy.Activator</Bundle-Activator>
+                        <Export-Package/>
+                    </instructions>
+                </configuration>
             </plugin>
         </plugins>
     </build>
