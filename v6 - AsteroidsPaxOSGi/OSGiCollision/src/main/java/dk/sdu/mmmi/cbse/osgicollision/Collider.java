@@ -1,74 +1,76 @@
-package dk.sdu.mmmi.cbse.osgienemy;
+package dk.sdu.mmmi.cbse.osgicollision;
 
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.GameData;
 import dk.sdu.mmmi.cbse.common.data.World;
-import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.ShootingPart;
+import dk.sdu.mmmi.cbse.common.data.entityparts.SplitterPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
-import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
-import java.util.Random;
+import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
 
-public class EnemySystem implements IEntityProcessingService {
+public class Collider implements IPostEntityProcessingService {
 
     @Override
     public void process(GameData gameData, World world) {
 
-        for (Entity enemy : world.getEntities(Enemy.class)) {
-                        
-            PositionPart positionPart = enemy.getPart(PositionPart.class);
-            MovingPart movingPart = enemy.getPart(MovingPart.class);
-            ShootingPart shootingPart = enemy.getPart(ShootingPart.class);
-            LifePart lifePart = enemy.getPart(LifePart.class);
+        for (Entity e1 : world.getEntities()) {
+            for (Entity e2 : world.getEntities()) {
+                if (e1.getID().equals(e2.getID())) {
+                    continue;
+                }
 
-            Random rand = new Random();
-            boolean left = rand.nextBoolean();
-            boolean right = rand.nextBoolean();
-            boolean up = rand.nextBoolean();
-            
-            boolean shooting = rand.nextInt(100) < 2;
-            
-            movingPart.setLeft(left);
-            movingPart.setRight(right);
-            movingPart.setUp(up);
-            
-            shootingPart.setShooting(shooting);
-            
-            movingPart.process(gameData, enemy);
-            positionPart.process(gameData, enemy);
-            shootingPart.process(gameData, enemy);
-            lifePart.process(gameData, enemy);
-            
-            if (lifePart.getLife() <= 0) {
-                world.removeEntity(enemy);
+                LifePart e1l = e1.getPart(LifePart.class);
+                LifePart e2l = e2.getPart(LifePart.class);
+
+                if (circleCollision(e1, e2)) {
+
+                    // test if player/enemy
+                    ShootingPart e1shot = e1.getPart(ShootingPart.class);
+                    ShootingPart e2shot = e2.getPart(ShootingPart.class);
+
+                    // test if asteroid                
+                    SplitterPart e1split = e1.getPart(SplitterPart.class);
+                    SplitterPart e2split = e2.getPart(SplitterPart.class);
+
+                    // asteroid hit asteroid
+                    if (e1split != null && e2split != null) {
+                        continue;
+                    }
+
+                    // player hit asteroid
+                    if (e1shot != null && e2split != null) {
+                        e1l.setLife(0);
+                    // player hit asteroid
+                    } else if (e2shot != null && e1split != null) {
+                        e2l.setLife(0);
+                    // something else colided
+                    } else {
+                        e1l.setIsHit(true);
+                        e2l.setIsHit(true);
+                    }
+                }
             }
-
-            updateShape(enemy);
         }
     }
 
-    private void updateShape(Entity entity) {
-        float[] shapex = entity.getShapeX();
-        float[] shapey = entity.getShapeY();
-        PositionPart positionPart = entity.getPart(PositionPart.class);
-        float x = positionPart.getX();
-        float y = positionPart.getY();
-        float radians = positionPart.getRadians();
+    private boolean circleCollision(Entity entity1, Entity entity2) {
+        PositionPart e1p = entity1.getPart(PositionPart.class);
+        PositionPart e2p = entity2.getPart(PositionPart.class);
 
-        shapex[0] = (float) (x + Math.cos(radians) * 8);
-        shapey[0] = (float) (y + Math.sin(radians) * 8);
+        float dx = e1p.getX() - e2p.getX();
+        float dy = e1p.getY() - e2p.getY();
 
-        shapex[1] = (float) (x + Math.cos(radians - 4 * 3.1415f / 5) * 8);
-        shapey[1] = (float) (y + Math.sin(radians - 4 * 3.1145f / 5) * 8);
+        // a^2 + b^2 = c^2
+        // c = sqrt(a^2 + b^2)
+        double distance = Math.sqrt(dx * dx + dy * dy);
 
-        shapex[2] = (float) (x + Math.cos(radians + 3.1415f) * 10);
-        shapey[2] = (float) (y + Math.sin(radians + 3.1415f) * 10);
+        // if radius overlap
+        if (distance < entity1.getRadius() + entity2.getRadius()) {
+            // Collision!
+            return true;
+        }
 
-        shapex[3] = (float) (x + Math.cos(radians + 4 * 3.1415f / 5) * 8);
-        shapey[3] = (float) (y + Math.sin(radians + 4 * 3.1415f / 5) * 8);
-
-        entity.setShapeX(shapex);
-        entity.setShapeY(shapey);
+        return false;
     }
 }
