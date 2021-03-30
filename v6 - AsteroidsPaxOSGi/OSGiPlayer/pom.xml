@@ -17,12 +17,6 @@
     <name>OSGiPlayer</name>
     <dependencies>
         <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <version>4.3.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>OSGiCommon</artifactId>
             <version>${project.version}</version>
