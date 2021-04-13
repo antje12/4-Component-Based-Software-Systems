@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>dk.sdu.mmmi.cbse</groupId>
-        <artifactId>AsteroidsNetbeansModules-parent</artifactId>
+        <artifactId>AsteroidsSpring-parent</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>Asteroid</artifactId>
