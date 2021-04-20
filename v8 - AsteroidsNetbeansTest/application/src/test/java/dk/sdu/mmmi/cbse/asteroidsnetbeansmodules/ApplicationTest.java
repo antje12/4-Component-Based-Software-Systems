@@ -6,6 +6,7 @@ import java.io.IOException;
 import static java.nio.file.Files.copy;
 import static java.nio.file.Paths.get;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Level;
@@ -16,12 +17,12 @@ import org.openide.util.Lookup;
 
 public class ApplicationTest extends NbTestCase {
 
-    private final String ADD_ASTEROID_UPDATES_FILE = 
-            "d:\\Git\\Asteroids\\v8 - AsteroidsNetbeansTest\\asteroid_updates.xml";
-    private final String REM_ASTEROID_UPDATES_FILE = 
-            "d:\\Git\\Asteroids\\v8 - AsteroidsNetbeansTest\\no_asteroid_updates.xml";
-    private final String UPDATES_FILE = 
-            "d:\\Git\\Asteroids\\v8 - AsteroidsNetbeansTest\\netbeans_modules\\updates.xml";
+    private final String ADD_ASTEROID_UPDATES_FILE
+            = "d:\\Git\\Asteroids\\v8 - AsteroidsNetbeansTest\\asteroid_updates.xml";
+    private final String REM_ASTEROID_UPDATES_FILE
+            = "d:\\Git\\Asteroids\\v8 - AsteroidsNetbeansTest\\no_asteroid_updates.xml";
+    private final String UPDATES_FILE
+            = "d:\\Git\\Asteroids\\v8 - AsteroidsNetbeansTest\\netbeans_modules\\updates.xml";
 
     public static Test suite() {
         return NbModuleSuite.createConfiguration(ApplicationTest.class).
@@ -43,10 +44,13 @@ public class ApplicationTest extends NbTestCase {
         new ActionNoBlock("Help|About", null).performMenu();
         new NbDialogOperator("About").closeByButton();
          */
-        
+
         // setup
         List<IEntityProcessingService> processors = new CopyOnWriteArrayList<>();
         List<IGamePluginService> plugins = new CopyOnWriteArrayList<>();
+        
+        // reset update center
+        copy(get(REM_ASTEROID_UPDATES_FILE), get(UPDATES_FILE), REPLACE_EXISTING);
         waitForUpdate(processors, plugins);
 
         // test that no modules are loaded
@@ -77,9 +81,11 @@ public class ApplicationTest extends NbTestCase {
         Thread.sleep(10000);
 
         processors.clear();
-        processors.addAll(Lookup.getDefault().lookupAll(IEntityProcessingService.class));
+        Collection<? extends IEntityProcessingService> pros = Lookup.getDefault().lookupAll(IEntityProcessingService.class);
+        processors.addAll(pros);
 
         plugins.clear();
-        plugins.addAll(Lookup.getDefault().lookupAll(IGamePluginService.class));
+        Collection<? extends IGamePluginService> plug = Lookup.getDefault().lookupAll(IGamePluginService.class);
+        plugins.addAll(plug);
     }
 }
