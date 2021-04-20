@@ -11,6 +11,10 @@
     <manifest OpenIDE-Module="dk.sdu.mmmi.cbse.Common" OpenIDE-Module-Display-Category="dk.sdu.mmmi.cbse" OpenIDE-Module-Implementation-Version="1.0.1-20210309" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Name="Common" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0.1"/>
 </module>
 
+<module codenamebase="dk.sdu.mmmi.cbse.Asteroid" distribution="Asteroid-1.0.1-SNAPSHOT.nbm" downloadsize="7149" license="13255ACB" needsrestart="false" releasedate="2021/03/09" targetcluster="asteroidsnetbeansmodules">
+    <manifest OpenIDE-Module="dk.sdu.mmmi.cbse.Asteroid" OpenIDE-Module-Display-Category="dk.sdu.mmmi.cbse" OpenIDE-Module-Implementation-Version="1.0.1-20210309" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="dk.sdu.mmmi.cbse.Common &gt; 1.0.1, org.openide.util.lookup &gt; 8.35.1" OpenIDE-Module-Name="Asteroid" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0.1"/>
+</module>
+
 <license name="B2B74E56">
                                  Apache License
                            Version 2.0, January 2004
