@@ -25,7 +25,7 @@ public class Game implements ApplicationListener {
 
     private final GameData gameData = new GameData();
     private List<IEntityProcessingService> entityProcessors = new ArrayList<>();
-    private List<IPostEntityProcessingService> postEntityProcessors = new ArrayList<>();
+    private static List<IPostEntityProcessingService> postEntityProcessors = new ArrayList<>();
     private World world = new World();
 
     @Override
@@ -45,9 +45,13 @@ public class Game implements ApplicationListener {
         ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
         loadPlugins(context);
         loadEntityProcessors(context);
-        loadPostEntityProcessors(context);
     }
 
+    public void setCollider(IPostEntityProcessingService collider)
+    {
+        postEntityProcessors.add(collider);
+    }
+    
     private void loadPlugins(ApplicationContext context) {
         IGamePluginService plugin;
         plugin = (IGamePluginService) context.getBean("AsteroidPlugin");
@@ -70,12 +74,6 @@ public class Game implements ApplicationListener {
         entityProcessors.add(service);
         service = (IEntityProcessingService) context.getBean("PlayerControlSystem");
         entityProcessors.add(service);
-    }
-
-    private void loadPostEntityProcessors(ApplicationContext context) {
-        IPostEntityProcessingService service;
-        service = (IPostEntityProcessingService) context.getBean("Collider");
-        postEntityProcessors.add(service);
     }
 
     @Override

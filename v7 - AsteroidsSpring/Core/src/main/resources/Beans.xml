@@ -8,4 +8,8 @@
         <import resource="Collision.xml" />
         <import resource="Enemy.xml" />
         <import resource="Player.xml" />
+        
+        <bean id="Game" class="dk.sdu.mmmi.cbse.core.main.Game">
+            <property name="collider" ref="Collider" />
+        </bean>
 </beans>
